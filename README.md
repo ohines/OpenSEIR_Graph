@@ -1,7 +1,8 @@
 # Open SEIR Graph: A project investigating population structure interventions on epidemic dynamics
 
 
-##Introduction
+## Introduction
+
 This open project is inspired by the Covid-19 epidemic of 2020, with the aim of studying the
 effect of underlying social structure on epidemic dynamics. The project intends to model
 the effect of various social structure interventions (lockdowns, quarantines, isolation, social-distancing)
@@ -23,7 +24,7 @@ Monte Carlo estimates of these quantities.
 
 
 
-##Illustrative Example
+## Illustrative Example
 
 As an example of the effect of population structure we consider two populations, of 5000
 people, the first of which is generated according to the [Barabási–Albert (BA)](https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model)
