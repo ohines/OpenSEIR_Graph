@@ -54,7 +54,7 @@ the social contact graph may significantly reduce the peak number of infections 
 
 At this stage this project is very much in its infancy, however collaborators may 
 direct future work to the following areas:
-* How can the SIER model be modified to more accurately reflect transmission observations
+* How can the SEIR model be modified to more accurately reflect transmission observations
 observed in practice. This may include adding additional strucutre to reflect age and comorbidities.
 * What graphical structure best represents that of real social contact? To what extent
 are conclusions about intervention measures sensitive to the underlying graphical strucutre?
