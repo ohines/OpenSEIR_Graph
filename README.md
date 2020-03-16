@@ -55,11 +55,10 @@ the social contact graph may significantly reduce the peak number of infections 
 
 At this stage this project is very much in its infancy, however collaborators may 
 direct future work to the following areas:
-* How can the SEIR model be modified to more accurately reflect transmission observations
-observed in practice. This may include adding additional strucutre to reflect age and comorbidities.
+* How can the SEIR model be modified to more accurately reflect transmission observations. This may include adding strucutre to reflect age and comorbidities.
 * What graphical structure best represents that of real social contact? To what extent
 are conclusions about intervention measures sensitive to the underlying graphical strucutre?
-* What is the effect of dynamic interventions? These may include adding additional rules
+* What is the effect of dynamic interventions? These may include rules
 such as removing edges from infecting individuals (e.g. quarantine), removing edges from certian 
 individuals for a limited number of days (e.g. lockdown, social-distancing)
 
