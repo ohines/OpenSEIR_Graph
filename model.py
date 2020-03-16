@@ -46,7 +46,7 @@ class Population:
                 if I[i]:
                     if self.Time - self.Itime[i] >= self.Iduration[i]:
                         self.remove_person(i)
-                self.Intervention()
+                self.intervention()
             #update stats
             self.SIR_stats['S'].append(sum(self.S))
             self.SIR_stats['E'].append(sum(self.E))
