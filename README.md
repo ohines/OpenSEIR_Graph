@@ -8,11 +8,11 @@ effect of underlying social structure on epidemic dynamics. The project intends 
 the effect of various social structure interventions (lockdowns, quarantines, isolation, social-distancing)
 on the dynamics of disease spread. 
 
-The basic model for this study is an SEIR model [SEIR (Susceptible, Exposed, Infectious,Removed)](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#Elaborations_on_the_basic_SIR_model) 
+The basic model for this study is an [SEIR (Susceptible, Exposed, Infectious,Removed) model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#Elaborations_on_the_basic_SIR_model) 
 built on a graphical population structure. A graph is used to represent a population with each
 node representing a person, and edges representing social contacts between two people.
 Interventions are understood as dynamic updates to the underlying structure.
-The current model is built in python using the `networkx` python package to graph structure.
+The current model is built in python using the `networkx` python package to represent graph structure.
 We encourage collaborators of all kinds to use this repository to study different interventions,
 and to improve the realism of the SEIR model.
 
@@ -36,9 +36,9 @@ These two graph types were chosen as they reasonably replicate the scale free be
 social structures, with the second also replicating clique-like behaviour. The source code for this example is found in 
 `example_plots.py`. Epidemics were set up with a single intial infectious person (patient 0).
 
-For this illustration, an incubation period of 4 days after exposure was assumed, during which the probability of transmission to a susceptible person along an edge
-was 0.01. This was followed by an infectious period of 10 days during which the probability of transmission along an edge
-was 0.05 per day. Two realisations of such a epidemic on the BA and PLC graphs are shown by the two figures below.
+For this illustration, an incubation period of 4 days was assumed, during which the probability of transmission to a susceptible person along an edge on a given day
+was 0.01. This was followed by an infectious period of 10 days during which the probability of transmission
+was 0.05 for each day. Two realisations of such a epidemic on the BA and PLC graphs are shown by the two figures below.
 Both graphs contained 9996 edges (social connections).
 
 ![An example epidemic on a BA population](plots/BA_example.png)
