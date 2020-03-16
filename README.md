@@ -8,7 +8,7 @@ effect of underlying social structure on epidemic dynamics. The project intends 
 the effect of various social structure interventions (lockdowns, quarantines, isolation, social-distancing)
 on the dynamics of disease spread. 
 
-The basic model for this study is an SEIR model [SEIR (Susceptible, Exposed, Infectious,Removed)](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#Deterministic_versus_stochastic_epidemic_models) 
+The basic model for this study is an SEIR model [SEIR (Susceptible, Exposed, Infectious,Removed)](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#Elaborations_on_the_basic_SIR_model) 
 built on a graphical population structure. A graph is used to represent a population with each
 node representing a person, and edges representing social contacts between two people.
 Interventions are understood as dynamic updates to the underlying structure.
