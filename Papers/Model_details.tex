@@ -52,14 +52,14 @@
     \section{Dynamic Interventions}
 
     In the SEIR model in the previous section, the Graph, $\mathcal{G}$ was static throughout the state evolution.
-    We define a dynamic intervention as those which add additional rules to modify $\mathcal{G}$. Denoting the state of the
+    We define a dynamic intervention as those with additional rules to modify $\mathcal{G}$. Denoting the state of the
     graph at a particular time point by $\mathcal{G}_t$ then an SEIR model with a dynamic intervention modifies the first
     step if the iteration to
     \begin{itemize}
         \item If $X_{i,T} = 0$, simulate $A \sim \text{Binomial}(n_{i,T}(1,\mathcal{G}_T),p_E)$ and
               $B \sim \text{Binomial}(n_{i,T}(2,\mathcal{G}_T),p_I)$, then if $A+B \geq 1$ set $X_{i,T+1}$ to $1$.
     \end{itemize}
-    Then adds an additional step at each time point, once the node iteration is complete, which obtains $\mathcal{G}_{T+1}$
+    Another step is included at each time point (after the node iteration is complete), which obtains $\mathcal{G}_{T+1}$
     conditional the histories of $\{X_{i,t}\}$ and on $\mathcal{G}_t$ up to time point $T$
 
     \section{Estimands}
