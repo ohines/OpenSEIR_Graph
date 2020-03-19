@@ -20,7 +20,7 @@ The current project aims to replicate the qualitative behaviour observed by the 
 significantly simpler rule and parameter set. In our model, a population is simulated according to a random graph generator,
 with nodes representing people, and edges representing social contacts between two people.
 The infection will then be allowed to spread from infected nodes to susceptible nodes along edges with some transmission 
-probability, and the disease status of each node in discrete time steps.
+probability, and the disease status of each node is updated in discrete time steps.
 
 In this simplified world, interventions can be understood as dynamic updates to the underlying population structure.
 The model is built in python using the `networkx` python package to represent graph structure.
