@@ -4,24 +4,28 @@
 ## Introduction
 
 This open project is inspired by the Covid-19 epidemic of 2020, with the aim of studying the
-effect of underlying social structure on epidemic dynamics. The project intends to model
+effect of underlying social structure on epidemic dynamics. The project intends to qualitatively model
 the effect of various social structure interventions (lockdowns, quarantines, isolation, social-distancing)
 on the dynamics of disease spread. 
 
 The basic model for this study is an [SEIR (Susceptible, Exposed, Infectious,Removed) model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#Elaborations_on_the_basic_SIR_model) 
-built on a graphical population structure. A graph is used to represent a population with each
-node representing a person, and edges representing social contacts between two people.
-Interventions are understood as dynamic updates to the underlying structure.
-The current model is built in python using the `networkx` python package to represent graph structure.
-We encourage collaborators of all kinds to use this repository to study different interventions,
-and to improve the realism of the SEIR model.
+built on a graphical population structure. [See related theoretical work](https://link.springer.com/content/pdf/10.1007/s00285-019-01329-4.pdf).
+The most realistic models of the Covid-19 outbreak, such as those by the 
+[Imperial College Covid-19 response team](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf)
+use spatial modelling to simulate a population with realistic demographic characteristics. Simulated
+individuals are then exposed to the infection by co-located individuals with some transmission probability,
+and the state of individuals is updated in discrete time steps.
 
-We shall consider two primary outcomes of interest: The peak proportion of the population infected and the duration for which the proportion
-of the infected population exceeds some threshold (say 10%). Technical details regarding the model can be found in `Papers/Model_details.pdf`. This pdf
-documents also defines estimands of interest and discusses methods for obtaining
-Monte Carlo estimates of these quantities. 
+The current project aims to replicate the qualitative behaviour observed by the group at Imperial, using a complex system with a 
+significantly simpler rule and parameter set. In our model, a population is simulated according to a random graph generator,
+with nodes representing people, and edges representing social contacts between two people.
+The infection will then be allowed to spread from infected nodes to susceptible nodes along edges with some transmission 
+probability, and the disease status of each node in discrete time steps.
 
-
+In this simplified world, interventions can be understood as dynamic updates to the underlying population structure.
+The model is built in python using the `networkx` python package to represent graph structure.
+Model code can be found in `model.py`, with technical details regarding the model given in `Papers/Model_details.pdf`.
+Estimands of interest, and methods for obtaining Monte Carlo estimates, are discussed in the same document. 
 
 
 ## Illustrative Example
